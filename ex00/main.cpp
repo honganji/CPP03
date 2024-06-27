@@ -2,6 +2,11 @@
 
 int main(void)
 {
-	std::cout << "hello world" << std::endl;
+	CrapTrap crapTrap("Yuji");
+	crapTrap.attack("Takeshi");
+	crapTrap.beRepaired(4);
+	crapTrap.takeDamage(std::numeric_limits<unsigned int>::max());
+	crapTrap.attack("Takeshi");
+	crapTrap.beRepaired(4);
 	return (0);
 }
